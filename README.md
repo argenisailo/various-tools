@@ -1,2 +1,2 @@
-# various-tools
+# Various Tools
 Various tools for various projects
