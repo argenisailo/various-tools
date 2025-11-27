@@ -6,7 +6,7 @@ const agent = new https.Agent({
   rejectUnauthorized: false,
 });
 
-export async function getExchangeRate(day, month, year) {
+export const getExchangeRate = async (day, month, year) => {
   const url = `http://dof.gob.mx/indicadores_detalle.php?cod_tipo_indicador=158&dfecha=${String(
     day
   ).padStart(2, "0")}%2F${String(month).padStart(
